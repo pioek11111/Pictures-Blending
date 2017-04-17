@@ -39,6 +39,9 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.userControl11 = new pwsd_lab04_a.UserControl1();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -52,11 +55,12 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(87, 54);
+            this.pictureBox1.Location = new System.Drawing.Point(368, 31);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(201, 199);
+            this.pictureBox1.Size = new System.Drawing.Size(143, 143);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -65,11 +69,12 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(398, 54);
+            this.pictureBox2.Location = new System.Drawing.Point(553, 32);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 199);
+            this.pictureBox2.Size = new System.Drawing.Size(146, 143);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -77,12 +82,13 @@
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(221, 286);
+            this.button1.Location = new System.Drawing.Point(462, 191);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(227, 47);
+            this.button1.Size = new System.Drawing.Size(133, 47);
             this.button1.TabIndex = 2;
             this.button1.Text = "Blender Button";
             this.button1.UseVisualStyleBackColor = false;
@@ -90,20 +96,22 @@
             // 
             // trackBar1
             // 
+            this.trackBar1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.trackBar1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.trackBar1.Location = new System.Drawing.Point(221, 358);
+            this.trackBar1.Location = new System.Drawing.Point(462, 244);
             this.trackBar1.Maximum = 100;
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(227, 45);
+            this.trackBar1.Size = new System.Drawing.Size(133, 45);
             this.trackBar1.TabIndex = 3;
             this.trackBar1.TickFrequency = 10;
             this.trackBar1.Value = 50;
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(124, 368);
+            this.label1.Location = new System.Drawing.Point(365, 249);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 13);
             this.label1.TabIndex = 4;
@@ -116,26 +124,52 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(127, 434);
+            this.progressBar1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.progressBar1.Location = new System.Drawing.Point(381, 295);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(403, 23);
+            this.progressBar1.Size = new System.Drawing.Size(288, 23);
             this.progressBar1.TabIndex = 5;
             this.progressBar1.Visible = false;
             // 
+            // progressBar2
+            // 
+            this.progressBar2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.progressBar2.Location = new System.Drawing.Point(381, 324);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(288, 23);
+            this.progressBar2.TabIndex = 7;
+            this.progressBar2.Visible = false;
+            // 
+            // userControl11
+            // 
+            this.userControl11.AllowDrop = true;
+            this.userControl11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.userControl11.AutoScroll = true;
+            this.userControl11.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.userControl11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userControl11.Location = new System.Drawing.Point(12, 12);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(323, 350);
+            this.userControl11.TabIndex = 6;
+            // 
             // Form1
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 496);
+            this.ClientSize = new System.Drawing.Size(724, 374);
+            this.Controls.Add(this.progressBar2);
+            this.Controls.Add(this.userControl11);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(2000, 413);
+            this.MinimumSize = new System.Drawing.Size(413, 413);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -160,6 +194,9 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private UserControl1 userControl11;
+        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
     }
 }
 
