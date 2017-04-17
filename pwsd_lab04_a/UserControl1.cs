@@ -71,7 +71,6 @@ namespace pwsd_lab04_a
             if (columns == 0) return;
             int counter = 0;
             int x,y;
-            //foreach(var p in listOfPictureBox)
             foreach(PictureBox p in pictureBoxes.Keys)
             {
                 x = xMargin + (counter % columns) * (size + xMargin);
@@ -140,8 +139,6 @@ namespace pwsd_lab04_a
                     pictureBoxes.Remove(imageChecked);                    
                     imageChecked = null;
                     resize(this, null);
-                    
-                   // SerializeObject(pictureBoxes.Values.ToList());
                 }
             }
         }
